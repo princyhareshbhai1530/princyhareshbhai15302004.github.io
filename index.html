@@ -1374,58 +1374,9 @@ function showSkills(category, btn) {
     </div>
   </section>
 
-<br><br>
-<h1 style="font-size: clamp(2.5rem, 4vw, 3rem); font-weight: bold; background: linear-gradient(to right, white, #ff0000); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 20px;">Testimonials</h1>
-<div class="slideshow-container">
 
-<div class="mySlides">
-  <q>Sahil is a dedicated and innovative programmer. His ability to solve complex problems is impressive.</q>
-  <p class="author">- Camron Green, Professor at Seneca Polytechnic College</p>
-</div>
 
-<div class="mySlides">
-  <q>Working with Sahil on various projects has been a pleasure. His technical skills and creativity are top-notch.</q>
-  <p class="author">- Margret Knight, Project Manager</p>
-</div>
 
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-</div>
-
-<div class="dot-container">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
 
 <section id="contact"><br><br>
 <h1 style="font-size: clamp(2.5rem, 4vw, 3rem); font-weight: bold; background: linear-gradient(to right, white, #ff0000); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 20px;">Contact Me</h1>
